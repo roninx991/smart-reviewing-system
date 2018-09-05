@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body{
+  overflow: hidden;
+  width: 100%;
+  height: 200vh;
+  background-color: #68829E;
+  background: linear-gradient(180deg, #68829E, #90AFC5);
+}
+
+#app-title {
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  margin: 0;
+  padding: 5% 0 2% 0;
+  text-align: center;
+  font-size: 300%;
+  color: ghostwhite;
+}
+
+.submit {
+  background-color: mediumseagreen;
+  border: none;
+  padding: 12px 60px;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 1;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+}
+
+.inputfile + label {
+  background-color: mediumseagreen;
+  border: none;
+  padding: 12px 60px;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+#uploads {
+  display: none;
+  width: 50%;
+  text-align: left;
+  color: white;
+  height: 30%;
+  margin-bottom: 5%;
+}
+
+#uploads .files, #uploads .file-status {
+  color: #000099;
+  height: 5%;
+  padding: 2%;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 0.5%;
+}
+
+#uploads .file-status {
+  padding: 0;
+  float: right;
+}
+
+#file-selected {
+  color: white;
+  display: inline-block;
+}
+
+#no-uploads {
+  display: none;
+  color: #555;
+  font-size: 250%;
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  padding: 8% 0 0 0;
+  font-weight: bold;
+}

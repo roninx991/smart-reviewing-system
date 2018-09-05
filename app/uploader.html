@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+    <script src="./uploader.js"></script>
+    <title>Smart Audit System</title>
+  </head>
+  <body>
+	<div class="container">
+		<center>
+	 		<div id="app-title">Your uploads</div>			
+	 		<div id="uploads"></div>
+      <div id="no-uploads"></div>
+      <form method="POST" action="#">
+        <input type="file" name="file" id="file" class="inputfile" onChange="window.App.captureFile(event);"/>
+        <label for="file">Choose a file</label>			 
+        <p><div id="file-selected"></div></p>
+      	<input type='button' class="submit" onClick="window.App.onSubmit(event);" value="Upload"/>
+      </form>	 		
+		</center>
+    </div>
+  </body>
+</html>

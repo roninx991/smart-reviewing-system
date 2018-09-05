@@ -1,2 +1,2 @@
-# smart-rieviewing-system
-Blockchain based reviwing system for conference papers and research journals
+# smart-audit-system
+Audit System built on Ethereum Blockchain using web3, truffle and javascript

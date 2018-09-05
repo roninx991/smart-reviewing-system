@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+    <script src="./app.js"></script>
+    <title>Smart Audit System</title>
+  </head>
+  <body>
+	<div class="container">
+		<div class="wrapper">
+			<div id="app-title">Smart Reviewer App</div>
+		  	<div class="card-box">
+			    <div class="card-box-header"><a class="sign-in active" href="#">Sign in</a><a class="sign-up" href="#">Sign up</a></div>
+			    <div class="show-me" id="card-box-main-1">
+			      <div class="card-box-body">
+				      <form method="POST" action="#">
+				        <div class="formgroup">
+				          <input class="username" type="password" placeholder="ETH Address" id="sign-in-eth-address" required="required"/>
+				        </div><br><br>
+				        <p>
+					        <div class="formgroup btn-form">
+					          <button class="submit" type="button" id="sign-in-button" onclick="App.getUser();">Sign in</button>
+					        </div>
+				        </p>
+				      </form>
+			      </div>
+			    </div>
+			    <div class="hide-me" id="card-box-main-2">
+			      <div class="card-box-body" id="sign-up-body">
+				      <form method="POST" action="#">
+				        <div class="formgroup">
+				          <input class="username" type="password" placeholder="ETH Address" id="sign-up-eth-address" required="required"/>
+				        </div><br><br>
+				        <div class="formgroup check-form">
+				          <input class="signed" type="checkbox" id="sign-up-user-type"/>
+				          <label for="terms">Sign up as an uploader</label>
+				        </div>
+				        <p>
+					        <div class="formgroup btn-form">
+					          <button class="submit" type="button" id="sign-up-button" onclick="App.createUser();">Sign up</button>
+					        </div>
+				        </p>
+				      </form>
+			      </div>
+			    </div>
+		  	</div>
+		  <div class="sign-in-box hide-me"></div>
+		  <div class="sign-up-box hide-me"></div>
+		</div>
+	</div>
+  </body>
+</html>
