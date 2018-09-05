@@ -1,17 +1,17 @@
 # smart-reviewing-system
 Conference Paper Reviewing System built on Ethereum Blockchain using Web3, Truffle, Solidity and Javascript.
 
-n recent years, many organizations have sprung up which publish journals 	submitted to the conferences organized by them. However such organizations do 	not check the quality of the papers/journals submitted to them and publish them by 	taking money from the authors. Even the authors don’t object since they can 	mention their publications in the resume. Due to such malpractices the quality of 	papers available for the scientific community degrades. Hence there is a need of a 	system which can assure the credibility of the papers published and gain the trust of 	the people who will be referring such papers for their research. This paper proposes 	a new quality assessment system of papers using ethereum blockchain. The system 	aims at using the distributed nature of blockchain for reviewing of papers and also 	rewarding those who provide value to the system by their contributions.
+In recent years, many organizations have sprung up which publish journals 	submitted to the conferences organized by them. However such organizations do 	not check the quality of the papers/journals submitted to them and publish them by 	taking money from the authors. Even the authors don’t object since they can 	mention their publications in the resume. Due to such malpractices the quality of 	papers available for the scientific community degrades. Hence there is a need of a 	system which can assure the credibility of the papers published and gain the trust of 	the people who will be referring such papers for their research. This paper proposes 	a new quality assessment system of papers using ethereum blockchain. The system 	aims at using the distributed nature of blockchain for reviewing of papers and also 	rewarding those who provide value to the system by their contributions.
 
 **Note: This application is in development phase. This repo contains the basic modules that the application will contain. More modules can be added as per requirement.**
 
 The basic applicaton consists of 3 modules:
 - User Signup and Signin
-- Uploading Documents (balance sheets uploaded by organisations to be audited)
-- Voting Panel (used by CA to approve/disapprove transaction records of organisations)
+- Uploading Documents (Conference papers uploaded by participants to be reviewed)
+- Voting Panel (used by domain experts to approve/disapprove papers based on its quality)
 
 # Prerequisites before using the application:
-  - Browser- Any modern browser will work just as fine.
+  - Browser- Any modern browser will work just as fine preferably Chrome or Firefox.
   - [Metamask](https://metamask.io/)- Download and install metamask as a plugin on your browser.
   - [Truffle](https://truffleframework.com/) - Download and install truffle framework on your system.
   - [Ganache](https://truffleframework.com/ganache)- Download and install Ganache on your system.
