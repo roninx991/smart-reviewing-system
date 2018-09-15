@@ -22,7 +22,7 @@ The basic applicaton consists of 3 modules:
 # How to use
 
 1. Clone the repo by typing the following:
-```git clone https://github.com/Sangatdas/smart-audit-system```
+```git clone https://github.com/Sangatdas/smart-reviewing-system```
 
 2. Start [Ganache](https://truffleframework.com/ganache) application.
 
