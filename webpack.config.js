@@ -18,8 +18,13 @@ module.exports = {
     new HtmlWebpackPlugin({ 
       filename: 'index.html',
       template: './app/index.html',
-      chunks: ['app', 'card'] 
+      chunks: ['app'] 
     }),
+    new HtmlWebpackPlugin({ 
+      filename: 'login.html',
+      template: './app/login.html',
+      chunks: ['app'] 
+    }),   
     new HtmlWebpackPlugin({
         filename: 'uploader.html', 
         template: './app/uploader.html',
