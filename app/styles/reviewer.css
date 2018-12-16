@@ -5,45 +5,6 @@ body{
   overflow: hidden;
   width: 100%;
   height: 200vh;
-  background-color: #68829E;
-  background: linear-gradient(180deg, #68829E, #90AFC5);
-}
-
-#app-title {
-  font-family: 'Lobster', cursive;
-  font-weight: bold;
-  margin: 0;
-  padding: 5% 0 2% 0;
-  text-align: center;
-  font-size: 300%;
-  color: ghostwhite;
-}
-
-.submit {
-  background-color: mediumseagreen;
-  border: none;
-  padding: 12px 60px;
-  border-radius: 40px;
-  color: white;
-  cursor: pointer;
-}
-
-.inputfile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 1;
-	overflow: hidden;
-	position: absolute;
-	z-index: 1;
-}
-
-.inputfile + label {
-  background-color: mediumseagreen;
-  border: none;
-  padding: 12px 60px;
-  border-radius: 40px;
-  color: white;
-  cursor: pointer;
 }
 
 #uploads {
@@ -63,30 +24,21 @@ body{
   background-color: white;
   margin-bottom: 0.5%;
 }
-
-#uploads .file-status {
-  padding: 0;
-  position: relative;
-  top: -13px;
-  float: right;
-  color: white;
+table {
+	border-top: 1px solid #DDD;
 }
 
-#uploads .file-status button {
-  border: none;
-  padding: 12px 60px;
-  border-radius: 40px;
-  color: white;
-  cursor: pointer;
-}
-#uploads .file-status .btn-upvote {
-  background-color: mediumseagreen;
+td {
+	padding: 10px 35px;
 }
 
-#uploads .file-status .btn-downvote {
-  background-color: #EE0000;
+tr {
+	border-bottom: 1px solid #DDD;
 }
-
+#balance{
+ 	font-weight: bold;
+}
+ 
 #file-selected {
   color: white;
   display: inline-block;

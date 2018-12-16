@@ -3,6 +3,7 @@ import jQuery from 'jquery';
 window.$ = window.jQuery = jQuery;
 
 // Import Sweetalert
+import swal from 'sweetalert';
 
 // Import libraries we need.
 import { default as Web3 } from 'web3';

@@ -31,6 +31,9 @@ window.App = {
 		if(load > 0)
 		{
 			User.setProvider(web3.currentProvider);
+			web3.eth.getBalance(web3.eth.accounts[0], (err, balance) => {
+			  document.getElementById("balance").innerHTML += web3.fromWei(balance, "ether") + " ETH"
+			});			
 			User.deployed().then(function(contractInstance) {
 				contractInstance.displayDocCount().then(function(count) {
 					c = parseInt(count);
@@ -49,7 +52,7 @@ window.App = {
 									if (stat == 1) {
 										var str1 = "App.upVote('" + hash + "');";
 										var str2 = "App.downVote('" + hash + "');";
-										document.getElementById("uploads").innerHTML += "<div class='files'><span class='hash'><a href='http://127.0.0.1:8080/ipfs/" + hash + "' target=_blank>" + hash + "</a></span><span class='file-status'><button class='btn-upvote' onclick=" + str1 + ">Upvote</button><button class='btn-downvote' onclick=" + str2 + ">Downvote</button></span></div>";
+										document.getElementById("uploads").innerHTML += "<tr class='files'><td class='hash'><a href='http://127.0.0.1:8080/ipfs/" + hash + "' target=_blank>" + hash + "</a></td><td><button class='btn btn-success' onclick=" + str1 + ">Upvote&nbsp&nbsp;<i class='fas fa-thumbs-up'></i></button></td><td><button class='btn btn-danger' onclick=" + str2 + ">Downvote&nbsp&nbsp<i class='fas fa-thumbs-down'></i></button></td></>";
 									}
 								}).catch(function(e) {
 									console.log("Error: ", e);

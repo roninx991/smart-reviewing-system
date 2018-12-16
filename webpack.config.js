@@ -6,7 +6,6 @@ module.exports = {
     app: './app/scripts/index.js',
     reviewer: './app/scripts/reviewer.js',
     uploader: './app/scripts/uploader.js',
-    card: './app/scripts/card.js',
   },
   mode: 'development',
   output: {
