@@ -48,6 +48,9 @@ td {
 tr {
 	border-bottom: 1px solid #DDD;
 }
+#balance{
+ 	font-weight: bold;
+}
 
 #file-selected {
   color: #0056B3;
